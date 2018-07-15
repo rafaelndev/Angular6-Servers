@@ -1,0 +1,12 @@
+<button type="button" class="btn btn-primary"
+ (click)="onClickDisplayDetails()"
+>Mostrar Detalhes</button>
+<p
+*ngIf="mostrarSenha"
+ >Senha Escondida = 8767g9fg88fg</p>
+
+ <p
+   *ngFor="let log of logList; let i = index"
+   [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
+   [ngClass]="{'white-text': i >= 5}"
+   >{{ log }}</p>

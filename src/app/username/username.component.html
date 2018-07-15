@@ -1,0 +1,12 @@
+<label for="">
+  Nome do Usuário
+</label>
+<input type="text" class="form-control"
+  [(ngModel)]="username"
+>
+<p>{{ username }}</p>
+<button type="button" class="btn btn-default"
+(click)="username = ''"
+[disabled]="username === ''"
+>Limpar</button>
+
